@@ -1,0 +1,163 @@
+/* css common start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* css common end*/
+body{
+    background-color: #ccc;
+}
+
+#project{
+    height: 440px;
+    justify-content: center;
+}
+
+#project  button{
+margin: 20px;
+padding: 10px 30px;
+border: none;
+outline: none;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: bold;
+color: purple;
+transition: 0.3s;
+align-items: center;
+cursor: pointer;
+border-radius: 5px;
+}
+
+#project button:hover{
+    background-color: purple;
+    color: #fff;
+
+}
+#project .box{
+    width: 300px;
+    height: 300px;
+    background-color: #44bd32;
+    margin-left: 105px;
+    margin-top: 20px;
+    display: none;
+}
+
+#content{
+    margin-left: 20px;
+    
+    
+}
+
+#content h1{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.row .nill-1{
+    height: 50px;
+    width: 200px;
+    background-color: #12CBC4;
+    margin: auto;
+    border: 1px solid red;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.row .nill-2{
+    height: 50px;
+    width: 200px;
+    background-color: #12CBC4;
+    margin: auto;
+    border: 1px solid red;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.abc{
+    margin:auto;
+    height: 200px;
+    width: 60%;
+    background-color: #0abde3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+}
+
+.abc h2{
+    background-color: #e74c3c;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.abc .about-box{
+    display: block;
+    background-color: #2c3e50;
+    padding: 25px;
+    display: none;
+}
+
+#accordion {
+    height: 500px;
+    background-color: #5a697849;
+    margin-bottom: 10px;
+}
+
+#accordion .container{
+    width: 500px;
+    background-color: orange;
+    margin-top: 10px;
+    
+    
+}
+
+#accordion .container .qns{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+
+    
+}
+
+#accordion .container .ans{
+    background-color: #F7F9F9;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+#accordion .container .qns.active ~ .ans{
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+#accordion .container .qns.active span{
+    transform: rotate(180deg);
+}
